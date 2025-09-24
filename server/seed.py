@@ -19,11 +19,11 @@ with app.app_context():
 
     print("Creating pizzas...")
 
-    cheese = Pizza(name="Emma", ingredients="Dough, Tomato Sauce, Cheese")
+    cheese = Pizza(name="morris", ingredients="Dough, Tomato Sauce, Cheese")
     pepperoni = Pizza(
-        name="Geri", ingredients="Dough, Tomato Sauce, Cheese, Pepperoni")
+        name="Giza", ingredients="Dough, Tomato Sauce, Cheese, Pepperoni")
     california = Pizza(
-        name="Melanie", ingredients="Dough, Sauce, Ricotta, Red peppers, Mustard")
+        name="Mimo", ingredients="Dough, Sauce, Ricotta, Red peppers, Mustard")
     pizzas = [cheese, pepperoni, california]
 
     print("Creating RestaurantPizza...")
@@ -37,4 +37,4 @@ with app.app_context():
     db.session.add_all(restaurantPizzas)
     db.session.commit()
 
-    print("Seeding done!")
+    print("Seeding done")
